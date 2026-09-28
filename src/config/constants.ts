@@ -22,6 +22,12 @@ export const LOW_BALANCE_USD = 15;
 /** Human-readable network fee shown in the deposit preview. */
 export const NETWORK_FEE = "0.00001 XLM";
 
+/** Horizon endpoint used to quote the current recommended Stellar fee. */
+export const HORIZON_FEE_STATS_URL = "https://horizon-testnet.stellar.org/fee_stats";
+
+/** How long a successful Horizon fee quote may be reused. */
+export const NETWORK_FEE_CACHE_TTL_MS = 30_000;
+
 /** Quick-select deposit amounts offered in the billing modal. */
 export const PRESET_AMOUNTS = [10, 50, 100, 500] as const;
 
